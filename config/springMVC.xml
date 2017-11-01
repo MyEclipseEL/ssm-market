@@ -72,7 +72,9 @@
                         <bean class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
                             <property name="classesToBeBound">
                                 <list>
-                                    <value>com.ssm.domain.User</value>
+                                    <value>com.market.po.SmCommodity</value>
+                                    <value>com.market.po.SmSpecies</value>
+                                    <value>com.market.po.SmShelt</value>
                                 </list>
                             </property>
                         </bean>
