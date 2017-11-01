@@ -9,4 +9,9 @@ import java.util.List;
  */
 public interface ComService {
     List<SmCommodity> findAll();
+
+
+    int updateCom(SmCommodity com);
+
+    int deleteCom(SmCommodity com);
 }

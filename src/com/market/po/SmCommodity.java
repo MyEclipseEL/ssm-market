@@ -1,5 +1,6 @@
 package com.market.po;
 
+
 public class SmCommodity {
     private Integer comId;
 
