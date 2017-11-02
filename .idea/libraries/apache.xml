@@ -3,7 +3,6 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/web/WEB-INF/lib/apache" />
     </CLASSES>
-    <JAVADOC />
     <SOURCES />
     <jarDirectory url="file://$PROJECT_DIR$/web/WEB-INF/lib/apache" recursive="false" />
   </library>
