@@ -14,4 +14,6 @@ public interface ComService {
     int updateCom(SmCommodity com);
 
     int deleteCom(SmCommodity com);
+
+    SmCommodity findById(Integer id);
 }
