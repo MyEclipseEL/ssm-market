@@ -4,7 +4,9 @@ import com.market.po.SmSave;
 import com.market.po.SmSaveExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface SmSaveMapper {
     int countByExample(SmSaveExample example);
 

@@ -25,4 +25,10 @@ public class SupServiceImpl implements SupService {
         sup = supMapper.selectByPrimaryKey(sup.getSupId());
         return sup;
     }
+
+    @Override
+    public int deleteSup(SmSupplier sup) {
+        return supMapper.deleteByPrimaryKey(sup.getSupId());
+
+    }
 }

@@ -4,7 +4,9 @@ import com.market.po.SmCommodity;
 import com.market.po.SmCommodityExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface SmCommodityMapper {
     int countByExample(SmCommodityExample example);
 

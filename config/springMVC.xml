@@ -44,7 +44,7 @@
 
     <!--配置视图解析器:解析真正的物理视图 -->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="prefix" value="/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 
@@ -82,6 +82,11 @@
                 </bean>
             </list>
         </property>
+    </bean>
+
+    <!-- 开启文件上传 -->
+    <bean id="multipartResolver" class="org.springframework.web.portlet.multipart.CommonsPortletMultipartResolver">
+        <property name="maxUploadSize" value="10240000"/>
     </bean>
 
 </beans>

@@ -28,7 +28,8 @@ public class ComServiceImpl implements ComService {
     private SmCommodityMapper comMapper;
     @Resource
     private SmSheltMapper sheltMapper;
-    @Resource SmSpeciesMapper speciesMapper;
+    @Resource
+    private SmSpeciesMapper speciesMapper;
 
     @Override
     public List<SmCommodity> findAll() {
@@ -50,6 +51,15 @@ public class ComServiceImpl implements ComService {
     @Override
     public int deleteCom(SmCommodity com) {
         return comMapper.deleteByPrimaryKey(com.getComId());
+    }
+
+    @Override
+    public SmCommodity findById(Integer id) {
+        SmCommodity com = comMapper.selectByPrimaryKey(id);
+        com.setSpecies(speciesMapper.selectByPrimaryKey(com.getkId()));
+        com.setShelt(sheltMapper.selectByPrimaryKey(com.getShelfId()));
+        com.setSup(supService.selectOne(com.getSup()));
+        return com;
     }
 
 

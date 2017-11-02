@@ -4,7 +4,9 @@ import com.market.po.SmPermission;
 import com.market.po.SmPermissionExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface SmPermissionMapper {
     int countByExample(SmPermissionExample example);
 

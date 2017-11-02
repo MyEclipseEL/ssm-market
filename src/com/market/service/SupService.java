@@ -12,4 +12,6 @@ public interface SupService {
     int updateSup(SmSupplier sup);
 
     SmSupplier selectOne(SmSupplier sup);
+
+    int deleteSup(SmSupplier sup);
 }

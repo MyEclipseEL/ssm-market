@@ -4,7 +4,9 @@ import com.market.po.SmSpecies;
 import com.market.po.SmSpeciesExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface SmSpeciesMapper {
     int countByExample(SmSpeciesExample example);
 

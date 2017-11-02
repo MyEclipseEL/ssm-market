@@ -4,7 +4,9 @@ import com.market.po.SmSupplier;
 import com.market.po.SmSupplierExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface SmSupplierMapper {
     int countByExample(SmSupplierExample example);
 

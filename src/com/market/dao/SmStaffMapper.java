@@ -4,7 +4,9 @@ import com.market.po.SmStaff;
 import com.market.po.SmStaffExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface SmStaffMapper {
     int countByExample(SmStaffExample example);
 

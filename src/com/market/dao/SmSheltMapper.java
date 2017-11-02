@@ -4,7 +4,9 @@ import com.market.po.SmShelt;
 import com.market.po.SmSheltExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface SmSheltMapper {
     int countByExample(SmSheltExample example);
 

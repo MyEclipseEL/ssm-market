@@ -371,4 +371,6 @@
   <select id="findAll" resultMap="BaseResultMap">
     SELECT * FROM sm_commodity
   </select>
+
+
 </mapper>
